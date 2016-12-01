@@ -2,18 +2,31 @@
 ###引入模块require("./lib/BMP24")
 ###构造函数
   BMP24(w,h)
+
   w是宽、h是高，单位是像素
+  
 ###在图片上画点
+
   BMP24.prototype.drawPoint(x,y,rgb)
-  (x,y)是点坐标，起始坐标是左上角的点(0,0)。
-  rgb是三基色值，每个值得范围在0-255之间。
+
+  (x,y)是点坐标，起始坐标是左上角的点(0,0)
+
+  rgb是三基色值，每个值得范围在0-255之间
+
 ###在图片上画直线
+
   BMP24.prototype.drawLine(startX,startY,endX,endY,rgb)
-  (startX,startY)是直线起点坐标。
-  (endX,endY)是直线终点坐标。
-  rgb是三基色值，每个值得范围在0-255之间。
+
+  (startX,startY)是直线起点坐标
+
+  (endX,endY)是直线终点坐标
+
+  rgb是三基色值，每个值得范围在0-255之间
+
 ###在图片上画矩形
+
   BMP24.prototype.drawRect(x,y,w,h,rgb)
+
   (x,y)是矩形左上角点的坐标。
   (w,h)分表表示矩形的宽和高。
   rgb是三基色值，每个值得范围在0-255之间。
